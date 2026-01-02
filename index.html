@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/web-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Solus</title>
+  </head>
+  <body>
+    <div class="w-full p-6 lg:p-10 font-sans bg-primary">
+      <!-- Nav Bar -->
+      <section>
+        <nav
+          class="fixed top-0 right-0 z-50 flex items-center md:w-screen justify-between w-full px-6 py-6 lg:px-10 lg:pt-8 xl:px-16 border shadow-md bg-white/10 border-white/20 backdrop-blur-md"
+        >
+          <div class="hidden md:flex items-center lg:w-[355px] gap-8 lg:gap-14">
+            <p class="text-dark-green text-lg font-normal">Home</p>
+            <p class="text-dark-green text-lg font-normal">About</p>
+            <p class="text-dark-green text-lg font-normal">Services</p>
+          </div>
+
+          <div class="transition duration-200 hover:scale-110 hover:opacity-80">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="flex text-2xl cursor-pointer md:hidden"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              ></path>
+            </svg>
+          </div>
+
+          <p class="font-bold text-[40px] md:text-[50px] text-dark-green">
+            Solus
+          </p>
+
+          <div>
+            <svg
+              stroke="currentColor"
+              fill="#00373e"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="flex text-2xl opacity-0 md:hidden"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="hidden md:flex items-center gap-8 lg:gap-14">
+            <p class="text-dark-green text-lg font-normal">Therapists</p>
+            <p class="text-dark-green text-lg font-normal">Resources</p>
+            <p class="text-dark-green text-lg font-normal">Contact</p>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col lg:max-w-[1250px] lg:max-h-[620px] lg:mx-auto overflow-hidden justify-center md:aspect-video md:relative text-center items-center px-6 py-10 mt-32 mb-24 rounded-[46px] w-full bg-beige"
+      >
+        <img
+          src="assets/images/Hero 1.png"
+          alt=""
+          class="absolute left-0 bottom-0 w-[24%] h-[88%] lg:max-w-[300px] hidden md:block"
+        />
+
+        <h1
+          class="self-center max-w-xs md:max-w-lg lg:max-w-xl mb-4 text-4xl md:text-5xl lg:text-[clamp(50px,5vw,70px)] lg:leading-[1.2] font-bold text-dark-green"
+        >
+          Support for Your Mental Well-being
+        </h1>
+
+        <p
+          class="mb-8 lg:mb-10 text-lg md:text-xl lg:text-2xl font-normal md:max-w-[450px] lg:max-w-xl text-dark-green"
+        >
+          Connect with licensed therapists, counselors, and wellness coaches to
+          support your journey.
+        </p>
+
+        <a
+          href="#"
+          class="self-center cursor-pointer hover:opacity-90 hover:scale-105 duration-200 py-4 text-sm md:text-base lg:text-lg font-semibold text-white rounded-full bg-dark-green px-11"
+          >Get Started</a
+        >
+
+        <img
+          src="assets/images/Hero 2.png"
+          alt=""
+          class="absolute right-0 bottom-0 w-[33%] lg:max-w-[350px] hidden md:block"
+        />
+      </section>
+
+      <!-- How it Works -->
+      <section
+        class="flex flex-col md:justify-around lg:max-w-[1350px] lg:mx-auto md:items-center w-full md:flex-row mb-24 gap-14 md:gap-0"
+      >
+        <img
+          src="assets/images/How it works.png"
+          alt="How it works image"
+          class="md:order-2 md:w-[50%] lg:max-w-[540px]"
+        />
+
+        <div
+          class="flex w-auto md:order-1 flex-col md:text-left md:items-start items-center gap-5 lg:gap-8 text-center"
+        >
+          <p class="text-sm font-medium text-dark-green">HOW IT WORKS</p>
+
+          <h2
+            class="max-w-xs lg:max-w-[345px] text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green lg:leading-[1.2]"
+          >
+            We Help You Prioritize Your Mental Health
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:max-w-[330px] text-dark-green"
+          >
+            Browse therapists, book a session, and start your healing journey
+            with trusted professionals.
+          </p>
+
+          <a
+            href="#"
+            class="self-center md:self-start py-4 text-sm hover:opacity-90 hover:scale-105 duration-200 cursor-pointer md:text-base lg:text-lg font-semibold text-white rounded-full bg-dark-green px-11"
+            >Find A Therapist</a
+          >
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="flex flex-col mb-24 gap-14">
+        <div class="flex flex-col items-center gap-5 text-center">
+          <p class="text-sm font-medium text-dark-green">SERVICES</p>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green lg:leading-[1.2] max-w-[300px]"
+          >
+            Your Path to Well-being
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:max-w-[360px] lg:max-w-[400px] text-dark-green"
+          >
+            Discover expert guidance for a healthier mind and balanced life.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:max-w-[1250px] lg:mx-auto w-full gap-10">
+          <div class="flex flex-col w-full gap-10 sm:flex-row">
+            <!-- Mindfulness -->
+            <div
+              class="flex flex-col overflow-hidden lg:relative text-left gap-6 px-8 py-11 lg:p-13 rounded-[46px] w-full bg-beige"
+            >
+              <h3
+                class="max-w-xs text-3xl md:text-4xl font-semibold lg:leading-[1.2] text-dark-green"
+              >
+                Mindfulness & Meditation
+              </h3>
+
+              <p class="text-lg font-normal text-dark-green max-w-[260px]">
+                Guided meditation sessions and stress management techniques.
+              </p>
+
+              <a
+                href="#"
+                class="self-start py-4 text-sm md:text-base font-semibold border rounded-full bg-beige border-dark-green hover:scale-105 duration-200 cursor-pointer px-11 text-dark-green"
+                >Learn More</a
+              >
+
+              <img
+                src="assets/images/Mindfulness.png"
+                alt=""
+                class="absolute right-11 lg:aspect-auto bottom-11 lg:w-[32%] lg:max-w-[195px] hidden lg:block"
+              />
+            </div>
+
+            <!-- Therapy -->
+            <div
+              class="flex flex-col text-left gap-6 px-8 py-11 lg:p-13 rounded-[46px] w-full bg-white"
+            >
+              <h3
+                class="text-3xl md:text-4xl font-semibold text-dark-green lg:leading-[1.2] max-w-[280px]"
+              >
+                One-on-One Therapy
+              </h3>
+
+              <p class="text-lg font-normal text-dark-green max-w-[280px]">
+                Virtual and in-person therapy sessions with licensed
+                professionals.
+              </p>
+
+              <a
+                href="#"
+                class="self-start py-4 text-sm md:text-base font-semibold border rounded-full border-dark-green hover:scale-105 duration-200 cursor-pointer px-11 text-dark-green"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <!-- Wellness -->
+          <div
+            class="flex flex-col lg:max-w-[1250px] lg:mx-auto md:relative text-left overflow-hidden gap-6 px-8 py-11 lg:p-13 rounded-[46px] w-full bg-white"
+          >
+            <h3
+              class="max-w-xs text-3xl md:text-4xl font-semibold text-dark-green"
+            >
+              Wellness Coaching
+            </h3>
+
+            <div
+              class="space-y-3 text-lg md:max-w-lg font-normal text-dark-green"
+            >
+              <p>
+                Personalized guidance to help you build healthier habits, manage
+                stress, and achieve balance in all areas of your life.
+              </p>
+
+              <p>
+                Our wellness coaches support you in creating sustainable
+                routines for mental, emotional, and physical well-being.
+              </p>
+            </div>
+
+            <a
+              href="#"
+              class="self-start py-4 text-sm md:text-base font-semibold text-white rounded-full bg-dark-green px-11 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+              >Learn More</a
+            >
+
+            <img
+              src="assets/images/Wellness.png"
+              alt=""
+              class="bottom-0 absolute right-0 w-[38%] hidden md:block lg:max-w-[395px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section
+        class="flex flex-col md:flex-row md:gap-16 md:items-center mb-24 lg:max-w-[1250px] lg:mx-auto"
+      >
+        <div class="flex flex-col items-start w-full gap-5 md:gap-10 text-left">
+          <p class="text-sm font-medium text-dark-green">TESTIMONIALS</p>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green lg:leading-[1.2] max-w-[300px] md:min-w-[380px] lg:max-w-[410px]"
+          >
+            What Our Clients Are Saying
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:w-[360px] w-[320px] text-dark-green"
+          >
+            Positive experiences from users who have benefited from therapy or
+            wellness programs.
+          </p>
+
+          <div class="flex items-center gap-6 mt-5 md:mt-0 mb-14 md:mb-0">
+            <img
+              src="assets/icons/Arrow left.svg"
+              alt="Arrow left"
+              class="cursor-pointer size-11 md:size-14"
+              onclick="prevSlide()"
+            />
+
+            <img
+              src="assets/icons/Arrow right.svg"
+              alt="Arrow right"
+              class="size-11 md:size-14 cursor-pointer"
+              onclick="nextSlide()"
+            />
+          </div>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="w-full overflow-hidden">
+          <div
+            class="flex items-center w-full gap-10 overflow-hidden transition-transform duration-500 ease-in-out"
+            id="slide"
+          >
+            <!-- Client 1 -->
+            <div
+              class="flex flex-col text-left gap-16 px-8 py-11 lg:p-14 lg:min-w-[440px] min-h-[360px] rounded-[46px] w-full min-w-[360px] bg-beige"
+            >
+              <p class="text-lg md:text-xl font-normal text-dark-green">
+                "Solus made it so easy to find the right therapist for me. The
+                sessions have truly transformed my mindset, and I feel more in
+                control of my emotions than ever before!"
+              </p>
+
+              <p class="text-base md:text-lg font-normal text-dark-green">
+                — Anna R., 32
+              </p>
+            </div>
+
+            <!-- Client 2 -->
+            <div
+              class="flex flex-col text-left gap-16 px-8 py-11 rounded-[46px] min-h-[360px] min-w-[360px] w-full lg:p-14 lg:min-w-[420px] bg-dark-green"
+            >
+              <p class="text-lg md:text-xl font-normal text-white">
+                "I was struggling with stress and anxiety, but the mindfulness
+                programs on Solus have helped me regain balance. I finally feel
+                like I'm prioritizing my mental well-being."
+              </p>
+
+              <p class="text-base md:text-lg font-normal text-white">
+                — Mark S., 41
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Partners -->
+      <section
+        class="flex flex-col sm:flex-row items-center justify-center gap-12 px-6 py-12 mb-24 flex-wrap rounded-[46px] w-full bg-white lg:max-w-[1250px] lg:mx-auto"
+      >
+        <p class="text-xl font-medium text-dark-green">Our Partners</p>
+
+        <div>
+          <img src="assets/icons/Wealthsimple.png" alt="Wealthsimple Logo" />
+        </div>
+
+        <div>
+          <img src="assets/icons/Notion.png" alt="Notion Logo" />
+        </div>
+
+        <div>
+          <img src="assets/icons/Medium.png" alt="Medium Logo" />
+        </div>
+
+        <div>
+          <img src="assets/icons/Braze.png" alt="Braze Logo" />
+        </div>
+
+        <div>
+          <img src="assets/icons/Sonos.png" alt="Sonos Logo" />
+        </div>
+      </section>
+
+      <!-- Explore -->
+      <section class="flex flex-col mb-24 gap-14">
+        <div class="flex flex-col items-center gap-5 text-center">
+          <p class="text-sm font-medium text-dark-green">EXPLORE & LEARN</p>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green lg:leading-[1.2] max-w-[300px] md:max-w-[350px] lg:max-w-[380px]"
+          >
+            Resources for Your Well-being
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:max-w-[360px] text-dark-green"
+          >
+            Explore expert insights, self-care guides, and tools to support your
+            mental health.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:max-w-[1250px] lg:mx-auto w-full gap-10">
+          <div
+            class="flex flex-col w-full lg:w-auto gap-10 sm:flex-row lg:justify-between"
+          >
+            <!-- Articles & guides -->
+            <div
+              class="flex flex-col bg-white rounded-[46px] py-12 px-8 text-center w-full items-center"
+            >
+              <h3
+                class="text-3xl lg:leading-[1.2] md:text-4xl mb-5 font-semibold text-dark-green w-[170px]"
+              >
+                Articles & Guides
+              </h3>
+
+              <p
+                class="text-base md:text-lg font-normal mb-10 text-dark-green max-w-[270px]"
+              >
+                Practical tips on stress management, mindfulness, and emotional
+                resilience.
+              </p>
+
+              <a
+                href="#"
+                class="py-4 text-sm md:text-base font-semibold text-white rounded-full bg-vivid-yellow px-11 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+                >Explore</a
+              >
+            </div>
+
+            <!-- Meditation & Relaxation -->
+            <div
+              class="flex flex-col w-full bg-white rounded-[46px] py-12 px-8 text-center items-center"
+            >
+              <h3
+                class="text-3xl md:text-4xl mb-5 font-semibold lg:leading-[1.2] text-dark-green w-[190px] md:w-[220px]"
+              >
+                Meditation & Relaxation
+              </h3>
+
+              <p
+                class="text-base md:text-lg font-normal mb-10 text-dark-green max-w-[260px]"
+              >
+                Audio sessions for guided meditation and deep breathing
+                exercises.
+              </p>
+
+              <a
+                href="#"
+                class="py-4 text-sm md:text-base font-semibold text-white rounded-full bg-teal px-11 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+                >Explore</a
+              >
+            </div>
+
+            <!-- Webinars & Workshops 1 -->
+            <div
+              class="lg:flex hidden flex-col w-full bg-white rounded-[46px] py-12 px-8 text-center items-center"
+            >
+              <h3
+                class="text-3xl md:text-4xl mb-5 font-semibold text-dark-green lg:leading-[1.2] w-[170px] md:w-[200px]"
+              >
+                Webinars & Workshops
+              </h3>
+
+              <p
+                class="text-base md:text-lg font-normal mb-10 text-dark-green max-w-[260px] md:max-w-[280px] lg:max-w-[260px]"
+              >
+                Live and recorded sessions with mental health professionals.
+              </p>
+
+              <a
+                href="#"
+                class="py-4 text-sm md:text-base font-semibold text-white rounded-full bg-pastel-red px-11 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+                >Explore</a
+              >
+            </div>
+          </div>
+
+          <!-- Webinars & Workshops 2 -->
+          <div
+            class="flex flex-col w-full bg-white rounded-[46px] py-12 px-8 lg:hidden text-center items-center"
+          >
+            <h3
+              class="text-3xl md:text-4xl mb-5 font-semibold text-dark-green lg:leading-[1.2] w-[170px] md:w-[200px]"
+            >
+              Webinars & Workshops
+            </h3>
+
+            <p
+              class="text-base md:text-lg font-normal mb-10 text-dark-green max-w-[260px] md:max-w-[280px]"
+            >
+              Live and recorded sessions with mental health professionals.
+            </p>
+
+            <a
+              href="#"
+              class="py-4 text-sm md:text-base font-semibold text-white rounded-full bg-pastel-red px-11 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+              >Explore</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Community -->
+      <section
+        class="flex flex-col lg:max-w-[1250px] lg:mx-auto overflow-hidden md:relative gap-14 mb-24 rounded-[46px] bg-white px-8 py-12 lg:p-13"
+      >
+        <div class="flex flex-col items-start gap-5 md:gap-7 text-left">
+          <p class="text-sm font-medium text-dark-green">COMMUNITY</p>
+
+          <h2
+            class="max-w-xs md:max-w-sm lg:max-w-[400px] text-4xl md:text-5xl lg:text-[52px] lg:leading-[1.2] font-bold text-dark-green"
+          >
+            You're Not Alone on This Journey
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:max-w-[365px] lg:max-w-[375px] text-dark-green"
+          >
+            Connect with others, share experiences, and find encouragement in a
+            safe, supportive space.
+          </p>
+
+          <a
+            href="#"
+            class="px-16 py-4 text-sm md:text-base lg:text-lg font-semibold text-white rounded-full bg-dark-green hover:opacity-90 hover:scale-105 duration-200 cursor-pointer"
+            >Join the Community</a
+          >
+
+          <img
+            src="assets/images/Community.png"
+            alt=""
+            class="bottom-0 absolute right-0 w-[55%] lg:max-w-[550px] hidden md:block"
+          />
+        </div>
+      </section>
+
+      <!-- Need Help -->
+      <section class="flex flex-col lg:max-w-[1250px] lg:mx-auto mb-24 gap-14">
+        <div class="flex flex-col items-start gap-5 lg:gap-7 text-left">
+          <p class="text-sm font-medium text-dark-green">NEED HELP?</p>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green max-w-[290px] md:max-w-[380px] lg:max-w-[420px] lg:leading-[1.2]"
+          >
+            Frequently Asked Questions
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal text-dark-green lg:hidden lg:max-w-md"
+          >
+            Find answers to common questions about our services, therapy, and
+            mental well-being.
+          </p>
+        </div>
+
+        <!-- Accordion -->
+        <div class="flex flex-col lg:flex-row lg:gap-5 justify-between">
+          <div
+            class="lg:flex flex-col hidden justify-between lg:order-1 min-w-[410px]"
+          >
+            <p
+              class="text-base md:text-lg lg:text-xl font-normal text-dark-green hidden lg:block lg:max-w-[400px]"
+            >
+              Find answers to common questions about our services, therapy, and
+              mental well-being.
+            </p>
+
+            <img src="assets/images/FAQ.png" alt="" class="w-[94%] h-[75%]" />
+          </div>
+
+          <div
+            class="flex flex-col lg:min-w-[485px] lg:max-w-[565px] lg:w-full gap-5 lg:justify-between lg:order-2"
+          >
+            <!-- Accordion 1 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                How do I book a therapy session?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+
+            <!-- Accordion 2 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                Are online sessions available?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+
+            <!-- Accordion 3 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                What's the difference between therapy and coaching?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+
+            <!-- Accordion 4 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                Do I need a subscription to access services?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+
+            <!-- Accordion 5 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                Can I switch therapists if I don't feel the right connection?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+
+            <!-- Accordion 6 -->
+            <div
+              class="bg-white w-full rounded-[30px] py-5 px-6 flex items-center justify-between"
+            >
+              <p class="font-medium text-dark-green text-[15px] md:text-lg">
+                Is my information and session history kept confidential?
+              </p>
+
+              <img src="assets/icons/Add.png" alt="Add icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get in Touch -->
+      <section class="flex flex-col mb-24 gap-14">
+        <div class="flex flex-col items-center gap-5 text-center">
+          <p class="text-sm font-medium text-dark-green">GET IN TOUCH</p>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-[52px] font-bold text-dark-green max-w-[300px] lg:max-w-sm lg:leading-[1.2]"
+          >
+            We're Here to Support You
+          </h2>
+
+          <p
+            class="text-base md:text-lg lg:text-xl font-normal md:max-w-[430px] lg:max-w-[470px] text-dark-green"
+          >
+            Whether you have questions, need help getting started, or want to
+            learn more — reach out anytime.
+          </p>
+        </div>
+
+        <!-- Contact Details -->
+        <div
+          class="flex flex-col gap-15 bg-white px-8 py-12 lg:p-13 rounded-[46px] lg:flex-row lg:justify-between lg:max-w-[1250px] lg:mx-auto lg:w-full"
+        >
+          <div class="flex flex-col lg:justify-between">
+            <div class="flex flex-col">
+              <h3
+                class="mb-8 text-3xl md:text-4xl font-semibold text-dark-green lg:min-w-[410px] lg:max-w-[600px] lg:w-full"
+              >
+                Contact Details:
+              </h3>
+
+              <div class="mb-6 space-y-4 lg:space-y-6">
+                <p class="text-base md:text-lg font-normal text-dark-green">
+                  <span class="font-bold">Email:</span> support@solus.com
+                </p>
+
+                <p class="text-base md:text-lg font-normal text-dark-green">
+                  <span class="font-bold">Phone:</span> +1 (123) 456-7890
+                </p>
+
+                <p class="text-base md:text-lg font-normal text-dark-green">
+                  <span class="font-bold">Address:</span> 123 Wellness Way, Calm
+                  City, CA 90210
+                </p>
+              </div>
+
+              <div class="flex items-center gap-5 mb-12">
+                <img
+                  src="assets/icons/Linkedin.png"
+                  alt="Linkedin Logo"
+                  class="size-7"
+                />
+
+                <img
+                  src="assets/icons/Facebook.png"
+                  alt="Facebook Logo"
+                  class="size-7"
+                />
+
+                <img
+                  src="assets/icons/Instagram.png"
+                  alt="Instagram Logo"
+                  class="size-7"
+                />
+
+                <img
+                  src="assets/icons/Whatsapp.png"
+                  alt="Whatsapp Logo"
+                  class="size-7"
+                />
+              </div>
+
+              <p
+                class="text-lg md:text-xl font-normal text-dark-green lg:hidden"
+              >
+                We typically respond within 12 hours.
+              </p>
+            </div>
+
+            <p
+              class="text-lg md:text-xl font-normal text-dark-green hidden lg:block"
+            >
+              We typically respond within 12 hours.
+            </p>
+          </div>
+
+          <div class="flex flex-col lg:w-1/2">
+            <p class="text-3xl md:text-4xl font-semibold text-dark-green mb-9">
+              Send Us a Message
+            </p>
+
+            <form
+              class="bg-pale-white rounded-[40px] w-full px-8 py-12 space-y-14"
+            >
+              <div class="flex flex-col">
+                <label
+                  for="email"
+                  class="text-dark-green block text-xl mb-1.5 font-normal"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full text-base font-normal bg-pale-white focus:outline-none text-dark-green placeholder:text-xl placeholder:font-normal placeholder:text-dark-green/20"
+                />
+
+                <div class="w-full mt-1 border-b border-dark-green"></div>
+              </div>
+
+              <div class="flex flex-col">
+                <label
+                  for="message"
+                  class="text-dark-green block text-xl mb-1.5 font-normal"
+                  >Message</label
+                >
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="w-full text-base font-normal bg-pale-white focus:outline-none text-dark-green placeholder:text-xl placeholder:text-dark-green/20"
+                />
+
+                <div class="w-full mt-1 border-b border-dark-green"></div>
+              </div>
+
+              <div
+                class="flex items-center justify-center w-full py-4 hover:opacity-90 hover:scale-105 duration-200 cursor-pointer rounded-full bg-dark-green px-11"
+              >
+                <a
+                  href="#"
+                  class="text-sm md:text-base font-semibold text-white"
+                  >Send Message</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section
+        class="flex lg:justify-between lg:max-w-[1250px] lg:mx-auto flex-col lg:flex-row gap-12 mb-8"
+      >
+        <div
+          class="flex flex-col bg-white px-8 py-12 lg:p-13 rounded-[46px] lg:w-1/2"
+        >
+          <p class="text-dark-green text-[40px] lg:text-5xl font-bold mb-10">
+            Solus
+          </p>
+
+          <div class="flex justify-between w-full mb-14">
+            <div class="flex flex-col gap-y-5">
+              <a href="#" class="text-lg font-normal text-dark-green">About</a>
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Services</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Therapists</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Resources</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Contact</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-y-5">
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Instagram</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Facebook</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >YouTube</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Linkedin</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-y-5">
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Terms of Use</a
+              >
+              <a href="#" class="text-lg font-normal text-dark-green"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+
+          <p class="text-lg font-semibold text-[#b8b8b8]">
+            © [2035] Solus. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Find Support -->
+        <div
+          class="flex flex-col overflow-hidden relative z-0 bg-dark-green px-8 lg:justify-between py-12 lg:p-13 lg:w-1/2 rounded-[46px]"
+        >
+          <div
+            class="mb-12 leading-[1.25] lg:leading-[1.3] text-white text-[44px] lg:text-[52px] font-bold"
+          >
+            <div>Find</div>
+            <div>Support,</div>
+            <div>Guidance,</div>
+            <div>and Balance.</div>
+          </div>
+
+          <img
+            src="assets/images/Find support.png"
+            alt=""
+            class="absolute right-[-1px] top-7 w-[35%] sm:w-[30%] md:w-[25%] lg:w-[38%]"
+          />
+
+          <div
+            class="flex items-center justify-center w-full py-4 bg-white hover:opacity-90 hover:scale-105 duration-200 cursor-pointer rounded-full px-11"
+          >
+            <a
+              href="#"
+              class="text-sm md:text-base font-semibold text-dark-green"
+              >Find Support Now</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src=""></script>
+  </body>
+</html>
