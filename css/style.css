@@ -735,6 +735,17 @@
       flex-direction: row;
     }
   }
+  .sm\:items-start {
+    @media (width >= 660px) {
+      align-items: flex-start;
+    }
+  }
+  .sm\:text-lg {
+    @media (width >= 660px) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .md\:relative {
     @media (width >= 48rem) {
       position: relative;
